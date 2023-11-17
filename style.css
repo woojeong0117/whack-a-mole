@@ -1,0 +1,87 @@
+@charset "utf-8";
+
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+
+#container {
+    padding: 0 30px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.top {
+    padding-top: 20px;
+}
+
+.score {
+    margin-left: 40px;
+}
+
+h1 {
+    font-size: 50px;
+    text-align: center;
+}
+
+.score {
+    font-size: 50px;
+    font-weight: 700;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+.wrap {
+    cursor: url('img/hammer_click.png'), auto;
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    gap: 30px 60px;
+    flex-wrap: wrap;
+}
+
+.box_wrap{
+    width: calc((100% - 120px) / 3);
+    height: 220px;
+    overflow: hidden;
+}
+
+.box {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.dirt {
+    position: absolute;
+    bottom: 0;    
+    left: 0;
+    z-index: 1;
+    height: 50%;
+}
+
+.mole {
+    position: absolute;
+    transition: top 1s;
+}
+
+.box.up .mole {
+    top: 0;
+}
+
+.box .mole {
+    top: 145px
+}
+
+.button {
+    display: block;
+    margin: 10px auto;
+    width: 150px;
+    height: 50px;
+    border: 1px solid ;
+    border-radius: 10px;
+    font-size: 20px;
+}
